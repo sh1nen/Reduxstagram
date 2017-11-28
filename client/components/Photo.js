@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
- const Photo = React.createClass({
+ const Photo = {
     render() {
         const { post , i, comments } = this.props;
         return(
@@ -32,6 +32,6 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
             </figure>
         )
     } 
- });
+ };
 
 export default Photo;
